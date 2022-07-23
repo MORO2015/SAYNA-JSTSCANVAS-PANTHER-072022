@@ -1,20 +1,20 @@
-#enigme{
-    background-image: url(../Illustrations_Logo/Enigme/Pantherenigme1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+#enigme {
+  background-image: url(../Illustrations_Logo/Enigme/Pantherenigme1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left;
 
-    .enigme-contente{
-        width: 30%;
-        position: absolute;
-        top: 100px;
-        right: 300px;
+  .enigme-contente {
+    width: 40%;
+    position: absolute;
+    top: 100px;
+    right: 300px;
 
-        .texte-enigme{
-            h1{
-             @extend %titre-beyno;
-             font-size: 32px;
-            }
-
-        }
+    .texte-enigme {
+      h1 {
+        @extend %titre-beyno;
+        font-size: 32px;
+      }
     }
+  }
 }
