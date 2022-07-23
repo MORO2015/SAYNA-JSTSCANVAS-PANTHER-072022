@@ -1,20 +1,39 @@
 #enigme {
+  height: calc(100vh - 100px);
   background-image: url(../Illustrations_Logo/Enigme/Pantherenigme1.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top left;
+  background-size: 50%;
+  background-position: 10px left;
 
   .enigme-contente {
     width: 40%;
     position: absolute;
-    top: 100px;
-    right: 300px;
+    top: 200px;
+    right: 200px;
 
     .texte-enigme {
       h1 {
         @extend %titre-beyno;
         font-size: 32px;
       }
+      .cercle-font {
+        margin-top: 50px;
+        padding: 50px;
+        width: 100%;
+        height: 250px;
+        background-image: url(../Illustrations_Logo/Enigme/Pantherenigme2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        align-items: center;
+        .texte {
+          font-size: 10px;
+          text-align: justify;
+          width: 60%;
+        }
+      }
     }
   }
+}
+#game {
+  display: none;
 }
