@@ -1,0 +1,252 @@
+
+//  style des barre a gauche et logo sociaux
+.scroll{
+    .left-bar{
+        height: 425px;
+        border: 2px solid $gray;
+        position: absolute;
+        left: 30px;
+        top: 0;
+    }
+    .mini-left-bar{
+        @extend .left-bar;
+        height: 290px;
+        left: 60px;
+    }
+    .logo-socio{
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 300px;
+        left: 52px;
+        img{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+     
+    }
+}
+
+// partie concernant l'accueil des heros
+
+#hero{
+    height: calc(100vh - 100px);
+    background-image: url("../Illustrations_Logo/Accueil/Pantherhome1..png");
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center right;
+    .hero_wrapper{
+        .hero_content{
+            width: 40%;
+            position: absolute;
+            top: 35%;
+            h1{
+                @extend %titre;
+            }
+
+            h2{
+               @extend %sous-titre;
+               padding: 15px 0;
+            }
+        }
+    }
+}
+
+.t_heros{
+    display: flex;
+    justify-content: space-between;
+}
+
+.un-hero{
+    display: flex;
+    justify-items: center;
+
+    
+    .image-hero1{
+        background-image: url("../Illustrations_Logo/Accueil/Pantherhome2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 250px;
+        width: 500px;
+    }
+    .image-hero2{
+        background-image: url("../Illustrations_Logo/Accueil/Pantherhome3.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 250px;
+        width: 500px;
+    }
+    .hero-info{
+        height: auto;
+        width: 65%;
+    }
+}
+
+// style de la partie la biographie de l'hero Blackk Panther
+#section2{
+    margin-top: 70px;
+    align-items: center;
+.biographie-hero{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 30px auto;
+    
+    .description{
+        
+        width: 50%;
+        .titre{
+         margin-top: 10px;
+         margin-bottom: 20px;
+         @extend %sous-titre;
+         
+        }
+        .texte{
+         margin-bottom: 30px;
+         text-align: justify;
+        }
+    }
+
+    .image-gauche{
+        width: 45%;
+        .bloc-hero{
+            position: relative;
+            top: 100px;
+            display: block;
+            text-align: justify;
+            background-color: $white;
+            background-size: 10%;
+            
+            padding: 30px 70px;
+            border-radius: 20px;
+            .nom-hero{
+                text-align: center;
+                color: $black;
+                @extend %titre-nom;
+
+            }
+            img{
+                
+                position: relative;
+                bottom: 130px ;
+                
+            }
+            .groupe-bouton{
+                text-align: center;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                button{
+                  padding: 10px;
+                  background-color: $blue;
+                  color: $white;
+                  margin: 10px;
+                  border: none;
+                  border-radius: 7px;
+                  font-size: 15px;
+                  &:hover{
+                    cursor: pointer;
+                  }
+                }
+            }
+            .text-biographie{
+                display: block;
+                margin: 30px;
+                .texte-autor{
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                    color: $black;
+                    .bloder{
+                      font-weight: bold;
+                      font-size: 14px;
+                      color: $black;
+                    }
+                }
+            }
+
+        }
+        .image-ilustra{
+            text-align: center;
+            position: relative;
+            top:400px;
+            width: 500px center;
+        
+        }
+    }
+}
+}
+
+// section concernant a contactez nous
+#section3{
+    background-image: url(../Illustrations_Logo/Accueil/Pantherhome7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    padding: 0 100px;
+    .card-font{
+        width: 80%;
+        margin: 0 auto;
+        .contact{
+        background-image: linear-gradient($white, rgb(255,255,255,0.6));
+        border-radius: 80px;
+        width: 70%;
+        height: 600px;
+        color: $black;
+        display: block;
+        margin: 80px auto;
+        padding: 50px;
+        text-align: center;
+        form{
+
+             .texte{
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .titre{
+            font-weight: bold;
+            font-size: 29px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input{
+            width: 80%;
+            height: 40px;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            opacity: 0.8;
+
+        }
+        textarea{
+            width: 80%;
+            border-radius: 15px;
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+            
+        }
+        button{
+            padding: 10px;
+            background-color: $light-pink;
+            color: $black;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 15px;
+            border: none;
+            font-weight: bold;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        }
+       
+
+
+    }
+    }
+}
+

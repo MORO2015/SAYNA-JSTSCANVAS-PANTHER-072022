@@ -1,0 +1,23 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    &_link{
+        text-decoration: none;
+        color: $white;
+        margin: 0.2rem;
+        padding-left: 12px;
+        font-family: 'beyno', 'sana serif';
+        font-size: 15px;
+    }
+    &_link:hover{
+        text-decoration: underline;
+        color: $gray;
+    }
+    &_link.active{
+        color: $gray;
+        border-bottom: 2px dotted $gray;
+        padding-bottom: 6px;
+    }
+}

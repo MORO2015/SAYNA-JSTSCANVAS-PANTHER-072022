@@ -1,0 +1,425 @@
+@font-face {
+  font-family: "panthera";
+  src: url("../police/panthera.otf");
+}
+@font-face {
+  font-family: "beyno";
+  src: url("../police/BEYNO.otf");
+}
+@font-face {
+  font-family: "cantarel";
+  src: url("../police/Cantarell-Regular.ttf");
+}
+@font-face {
+  font-family: "wakanda";
+  src: url("../police/WakandaForever-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  background: radial-gradient(126.67% 350.28% at -21.35% 0%, #11213f 0%, #0b0b0b 39.1%, rgba(2, 23, 64, 0.837641) 94.57%, rgba(2, 23, 64, 0) 100%);
+  font-family: "cantarel", "sans serif";
+  font-size: 16px;
+  color: #ffffff;
+}
+body #hero-wakanda .wakanda .hero_content h1, #hero-wakanda .wakanda .hero_content body h1, body #hero .hero_wrapper .hero_content h1, #hero .hero_wrapper .hero_content body h1 {
+  font-family: "panthera", "sans seirf";
+  font-size: 50px;
+  color: #9e91b7;
+}
+body #enigme .enigme-contente .texte-enigme h1, #enigme .enigme-contente .texte-enigme body h1, body #wakanda-description .titre-wakanda, #wakanda-description body .titre-wakanda, body #section2 .biographie-hero .description .titre, #section2 .biographie-hero .description body .titre, body #hero .hero_wrapper .hero_content h2, #hero .hero_wrapper .hero_content body h2 {
+  font-family: "beyno", "sans serif";
+  font-size: 22px;
+  color: #9e91b7;
+}
+body #hero-wakanda .wakanda .hero_content h2, #hero-wakanda .wakanda .hero_content body h2 {
+  font-family: "wakanda", "sans serif";
+  font-size: 30px;
+  color: #9e91b7;
+}
+body #section2 .biographie-hero .image-gauche .bloc-hero .nom-hero, #section2 .biographie-hero .image-gauche .bloc-hero body .nom-hero {
+  font-family: "cantarel", "sans serif";
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+.navbar_link {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0.2rem;
+  padding-left: 12px;
+  font-family: "beyno", "sana serif";
+  font-size: 15px;
+}
+.navbar_link:hover {
+  text-decoration: underline;
+  color: #9e91b7;
+}
+.navbar_link.active {
+  color: #9e91b7;
+  border-bottom: 2px dotted #9e91b7;
+  padding-bottom: 6px;
+}
+
+.scroll .left-bar, .scroll .mini-left-bar {
+  height: 425px;
+  border: 2px solid #9e91b7;
+  position: absolute;
+  left: 30px;
+  top: 0;
+}
+.scroll .mini-left-bar {
+  height: 290px;
+  left: 60px;
+}
+.scroll .logo-socio {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 300px;
+  left: 52px;
+}
+.scroll .logo-socio img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#hero {
+  height: calc(100vh - 100px);
+  background-image: url("../Illustrations_Logo/Accueil/Pantherhome1..png");
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center right;
+}
+#hero .hero_wrapper .hero_content {
+  width: 40%;
+  position: absolute;
+  top: 35%;
+}
+#hero .hero_wrapper .hero_content h2 {
+  padding: 15px 0;
+}
+
+.t_heros {
+  display: flex;
+  justify-content: space-between;
+}
+
+.un-hero {
+  display: flex;
+  justify-items: center;
+}
+.un-hero .image-hero1 {
+  background-image: url("../Illustrations_Logo/Accueil/Pantherhome2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 250px;
+  width: 500px;
+}
+.un-hero .image-hero2 {
+  background-image: url("../Illustrations_Logo/Accueil/Pantherhome3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 250px;
+  width: 500px;
+}
+.un-hero .hero-info {
+  height: auto;
+  width: 65%;
+}
+
+#section2 {
+  margin-top: 70px;
+  align-items: center;
+}
+#section2 .biographie-hero {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 30px auto;
+}
+#section2 .biographie-hero .description {
+  width: 50%;
+}
+#section2 .biographie-hero .description .titre {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#section2 .biographie-hero .description .texte {
+  margin-bottom: 30px;
+  text-align: justify;
+}
+#section2 .biographie-hero .image-gauche {
+  width: 45%;
+}
+#section2 .biographie-hero .image-gauche .bloc-hero {
+  position: relative;
+  top: 100px;
+  display: block;
+  text-align: justify;
+  background-color: #ffffff;
+  background-size: 10%;
+  padding: 30px 70px;
+  border-radius: 20px;
+}
+#section2 .biographie-hero .image-gauche .bloc-hero .nom-hero {
+  text-align: center;
+  color: #000000;
+}
+#section2 .biographie-hero .image-gauche .bloc-hero img {
+  position: relative;
+  bottom: 130px;
+}
+#section2 .biographie-hero .image-gauche .bloc-hero .groupe-bouton {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#section2 .biographie-hero .image-gauche .bloc-hero .groupe-bouton button {
+  padding: 10px;
+  background-color: #07338c;
+  color: #ffffff;
+  margin: 10px;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+}
+#section2 .biographie-hero .image-gauche .bloc-hero .groupe-bouton button:hover {
+  cursor: pointer;
+}
+#section2 .biographie-hero .image-gauche .bloc-hero .text-biographie {
+  display: block;
+  margin: 30px;
+}
+#section2 .biographie-hero .image-gauche .bloc-hero .text-biographie .texte-autor {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+#section2 .biographie-hero .image-gauche .bloc-hero .text-biographie .texte-autor .bloder {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+}
+#section2 .biographie-hero .image-gauche .image-ilustra {
+  text-align: center;
+  position: relative;
+  top: 400px;
+  width: 500px center;
+}
+
+#section3 {
+  background-image: url(../Illustrations_Logo/Accueil/Pantherhome7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+  padding: 0 100px;
+}
+#section3 .card-font {
+  width: 80%;
+  margin: 0 auto;
+}
+#section3 .card-font .contact {
+  background-image: linear-gradient(#ffffff, rgba(255, 255, 255, 0.6));
+  border-radius: 80px;
+  width: 70%;
+  height: 600px;
+  color: #000000;
+  display: block;
+  margin: 80px auto;
+  padding: 50px;
+  text-align: center;
+}
+#section3 .card-font .contact form .texte {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+#section3 .card-font .contact form .titre {
+  font-weight: bold;
+  font-size: 29px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#section3 .card-font .contact form input {
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  opacity: 0.8;
+}
+#section3 .card-font .contact form textarea {
+  width: 80%;
+  border-radius: 15px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+#section3 .card-font .contact form button {
+  padding: 10px;
+  background-color: #f2cef2;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+}
+#section3 .card-font .contact form button:hover {
+  cursor: pointer;
+}
+
+#hero-wakanda {
+  height: calc(100vh - 100px);
+  width: 100%;
+  background-image: url("../Illustrations_Logo/Wakanda/Pantherwakanda1.png");
+  background-repeat: no-repeat;
+  background-position: center -100px;
+  background-size: 100% cover;
+}
+#hero-wakanda .wakanda .hero_content {
+  width: 40%;
+  position: absolute;
+  top: 35%;
+}
+#hero-wakanda .wakanda .hero_content h2 {
+  padding: 20px 0px;
+}
+#hero-wakanda .wakanda .hero_content .texte {
+  text-align: justify;
+}
+
+#wakanda-description {
+  background-image: url(../Illustrations_Logo/Wakanda/Pantherwakanda2.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+}
+#wakanda-description .description {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+#wakanda-description .description .gauche {
+  width: 45%;
+}
+#wakanda-description .description .droite {
+  width: 45%;
+}
+#wakanda-description .titre-wakanda {
+  text-align: justify;
+  margin: 10px 0;
+}
+#wakanda-description .texte-wakanda {
+  text-align: justify;
+}
+#wakanda-description .petit-texte {
+  font-size: 14px;
+  margin: 20px 0;
+}
+#wakanda-description .bloc-lien {
+  height: 150px;
+  width: 100%;
+  background-color: #07338c;
+  align-items: center;
+  margin: 15px 0;
+  padding: 25px 20px;
+}
+#wakanda-description .les-heros {
+  width: 100%;
+  height: 300px;
+  background-image: url(../Illustrations_Logo/Wakanda/Pantherwakanda2-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+#enigme {
+  background-image: url(../Illustrations_Logo/Enigme/Pantherenigme1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  padding: 0 100px;
+}
+#enigme .enigme-contente .texte-enigme h1 {
+  font-size: 32px;
+}
+
+footer {
+  color: #ffffff;
+  padding: 50px 0;
+  background-color: red;
+  background-image: url(../Illustrations_Logo/All_pages/back_footer.png);
+  background-position: center;
+  background-size: auto;
+}
+footer .pied-page {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+footer .pied-page .left-image {
+  background-image: url(../Illustrations_Logo/All_pages/footer1.png);
+  background-size: 100px cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+}
+footer .pied-page .left-image img {
+  position: relative;
+  width: 40%;
+  left: -40px;
+  top: 155px;
+}
+footer .pied-page .card-right {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+footer .pied-page .card-right .card-social {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+footer .page .titre-socio {
+  font-size: 18;
+  font-weight: bold;
+}
+footer .page .texte {
+  margin: 10px;
+  font-family: "cantarel";
+  font-size: 16px;
+}
+footer .logo-socio .titre-socio {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+footer .logo-socio .image-logo {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .texte-fin {
+  margin-top: 100px;
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */
