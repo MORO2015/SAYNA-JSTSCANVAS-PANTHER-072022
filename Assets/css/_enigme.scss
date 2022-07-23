@@ -2,12 +2,16 @@
     background-image: url(../Illustrations_Logo/Enigme/Pantherenigme1.png);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100%;
-    padding: 0 100px;
+
     .enigme-contente{
+        width: 30%;
+        position: absolute;
+        top: 100px;
+        right: 300px;
+
         .texte-enigme{
             h1{
-             @extend %sous-titre;
+             @extend %titre-beyno;
              font-size: 32px;
             }
 

@@ -36,9 +36,14 @@ body #hero-wakanda .wakanda .hero_content h1, #hero-wakanda .wakanda .hero_conte
   font-size: 50px;
   color: #9e91b7;
 }
-body #enigme .enigme-contente .texte-enigme h1, #enigme .enigme-contente .texte-enigme body h1, body #wakanda-description .titre-wakanda, #wakanda-description body .titre-wakanda, body #section2 .biographie-hero .description .titre, #section2 .biographie-hero .description body .titre, body #hero .hero_wrapper .hero_content h2, #hero .hero_wrapper .hero_content body h2 {
+body #wakanda-description .titre-wakanda, #wakanda-description body .titre-wakanda, body #section2 .biographie-hero .description .titre, #section2 .biographie-hero .description body .titre, body #hero .hero_wrapper .hero_content h2, #hero .hero_wrapper .hero_content body h2 {
   font-family: "beyno", "sans serif";
   font-size: 22px;
+  color: #9e91b7;
+}
+body #enigme .enigme-contente .texte-enigme h1, #enigme .enigme-contente .texte-enigme body h1 {
+  font-family: "beyno", "sans serif";
+  font-size: 40px;
   color: #9e91b7;
 }
 body #hero-wakanda .wakanda .hero_content h2, #hero-wakanda .wakanda .hero_content body h2 {
@@ -357,8 +362,12 @@ body #section2 .biographie-hero .image-gauche .bloc-hero .nom-hero, #section2 .b
   background-image: url(../Illustrations_Logo/Enigme/Pantherenigme1.png);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100%;
-  padding: 0 100px;
+}
+#enigme .enigme-contente {
+  width: 30%;
+  position: absolute;
+  top: 100px;
+  right: 300px;
 }
 #enigme .enigme-contente .texte-enigme h1 {
   font-size: 32px;
