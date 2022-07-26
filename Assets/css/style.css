@@ -36,7 +36,7 @@ body #hero-wakanda .wakanda .hero_content h1, #hero-wakanda .wakanda .hero_conte
   font-size: 50px;
   color: #9e91b7;
 }
-body #wakanda-description .titre-wakanda, #wakanda-description body .titre-wakanda, body #section2 .biographie-hero .description .titre, #section2 .biographie-hero .description body .titre, body #hero .hero_wrapper .hero_content h2, #hero .hero_wrapper .hero_content body h2 {
+body #game h2, #game body h2, body #wakanda-description .titre-wakanda, #wakanda-description body .titre-wakanda, body #section2 .biographie-hero .description .titre, #section2 .biographie-hero .description body .titre, body #hero .hero_wrapper .hero_content h2, #hero .hero_wrapper .hero_content body h2 {
   font-family: "beyno", "sans serif";
   font-size: 22px;
   color: #9e91b7;
@@ -46,7 +46,7 @@ body #enigme .enigme-contente .texte-enigme h1, #enigme .enigme-contente .texte-
   font-size: 40px;
   color: #9e91b7;
 }
-body #hero-wakanda .wakanda .hero_content h2, #hero-wakanda .wakanda .hero_content body h2 {
+body #game .question, #game body .question, body #hero-wakanda .wakanda .hero_content h2, #hero-wakanda .wakanda .hero_content body h2 {
   font-family: "wakanda", "sans serif";
   font-size: 30px;
   color: #9e91b7;
@@ -318,6 +318,7 @@ body #section2 .biographie-hero .image-gauche .bloc-hero .nom-hero, #section2 .b
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100%;
+  margin-bottom: 30px;
 }
 #wakanda-description .description {
   width: 80%;
@@ -363,35 +364,120 @@ body #section2 .biographie-hero .image-gauche .bloc-hero .nom-hero, #section2 .b
   background-image: url(../Illustrations_Logo/Enigme/Pantherenigme1.png);
   background-repeat: no-repeat;
   background-size: 50%;
-  background-position: 10px left;
+  background-position: 50px -15px;
 }
 #enigme .enigme-contente {
   width: 40%;
   position: absolute;
   top: 200px;
   right: 200px;
+  text-align: center;
 }
 #enigme .enigme-contente .texte-enigme h1 {
-  font-size: 32px;
+  font-size: 40px;
 }
 #enigme .enigme-contente .texte-enigme .cercle-font {
   margin-top: 50px;
   padding: 50px;
   width: 100%;
-  height: 250px;
+  height: 310px;
   background-image: url(../Illustrations_Logo/Enigme/Pantherenigme2.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  align-items: center;
+  background-size: cover;
 }
 #enigme .enigme-contente .texte-enigme .cercle-font .texte {
   font-size: 10px;
   text-align: justify;
   width: 60%;
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+}
+#enigme .enigme-contente .texte-enigme .cercle-font .image-tirait {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+#enigme .enigme-contente .texte-enigme .cercle-font .image-logo {
+  width: 50px;
+  position: absolute;
+  bottom: -20px;
 }
 
 #game {
-  display: none;
+  min-height: auto;
+  padding: 30px 0;
+}
+#game h2 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+#game h2 span {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9e91b7;
+}
+#game .texte {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+#game .question {
+  margin: 15px 0;
+}
+#game .Alors {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+#game .game-containe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#game .game-containe .quiz {
+  width: 50%;
+}
+#game .game-containe .quiz form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#game .game-containe .quiz input {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  border: solid #f2cef2;
+  background: none;
+  text-align: justify;
+}
+#game .game-containe .quiz input::-moz-placeholder {
+  padding-left: 20px;
+  color: #ffffff;
+  font-size: 14px;
+}
+#game .game-containe .quiz input:-ms-input-placeholder {
+  padding-left: 20px;
+  color: #ffffff;
+  font-size: 14px;
+}
+#game .game-containe .quiz input::placeholder {
+  padding-left: 20px;
+  color: #ffffff;
+  font-size: 14px;
+}
+#game .game-containe .quiz button {
+  padding: 10px 20px;
+  background-color: #df99f2;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+#game .game-containe .quiz button:hover {
+  cursor: pointer;
+}
+#game .game-containe .texte-droite {
+  width: 40%;
 }
 
 footer {
