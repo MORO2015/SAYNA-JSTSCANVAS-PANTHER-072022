@@ -117,11 +117,12 @@ body #section2 .biographie-hero .image-gauche .bloc-hero .nom-hero, #section2 .b
   position: absolute;
   top: 35%;
 }
-#hero .hero_wrapper .hero_content h1:hover {
-  transform: scale(1.3);
-}
 #hero .hero_wrapper .hero_content h2 {
   padding: 15px 0;
+}
+
+.scale:hover {
+  transform: scale(1.2);
 }
 
 .t_heros {
@@ -464,7 +465,10 @@ body #section2 .biographie-hero .image-gauche .bloc-hero .nom-hero, #section2 .b
 #game .game-containe .quiz {
   width: 50%;
 }
-#game .game-containe .quiz form {
+#game .game-containe .quiz form #quiz_1 {
+  display: block;
+}
+#game .game-containe .quiz form #quiz_1 .champ {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -477,7 +481,6 @@ body #section2 .biographie-hero .image-gauche .bloc-hero .nom-hero, #section2 .b
   margin-bottom: 25px;
   border: solid #f2cef2;
   background: none;
-  text-align: justify;
 }
 #game .game-containe .quiz input::-moz-placeholder {
   padding-left: 20px;
@@ -496,17 +499,26 @@ body #section2 .biographie-hero .image-gauche .bloc-hero .nom-hero, #section2 .b
 }
 #game .game-containe .quiz button {
   padding: 10px 20px;
+  width: 130px;
   background-color: #df99f2;
   border-radius: 20px;
   font-size: 20px;
   font-weight: bold;
   color: #ffffff;
+  margin: 0 auto;
 }
 #game .game-containe .quiz button:hover {
   cursor: pointer;
 }
 #game .game-containe .texte-droite {
   width: 40%;
+  background-image: url(../Illustrations_Logo/Enigme/Pantherenigme2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 50px 50px;
+}
+#game .game-containe .texte-droite .texte {
+  width: 70%;
 }
 
 footer {

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Assets/css/style.css" />
-    <title>ACCUEIL</title>
+    <title>Enigme</title>
   </head>
   <body>
     <!-- partie concernant l'en tete et le menu -->
@@ -58,10 +58,13 @@
       <section id="enigme">
         <div class="enigme-contente container">
           <div class="texte-enigme">
-            <h1>
-              Releve le defi <br />
-              des dora milaje
-            </h1>
+            <div class="scale">
+              <h1>
+                Releve le defi <br />
+                des dora milaje
+              </h1>
+            </div>
+
             <div class="cercle-font">
               <p class="texte">
                 Les Dora Milaje sont de farouches guerrières d’élite. Elles
@@ -96,19 +99,23 @@
         <div class="game-containe container">
           <div class="quiz">
             <form action="" method="post">
-              <h2>ENIGME NUMERO <span>1</span></h2>
-              <p class="texte">
-                Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé
-                écrite en Wakandais, et apprend par la même occasion la première
-                valeur d’une Dora Milaje !
-              </p>
-              <p class="question">
-                “ SI JE SUIS FIDELE C’EST A CE TRONE PEU IMPORTE QUI MONTE
-                DESSUS ”
-              </p>
-              <label for="Alors">Alors, as tu la réponse ?</label>
-              <input type="text" name="" id="" placeholder="Réponse" />
-              <button type="submit">Envoyer</button>
+              <div id="quiz_1">
+                <h2>ENIGME NUMERO <span>1</span></h2>
+                <p class="texte">
+                  Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé
+                  écrite en Wakandais, et apprend par la même occasion la
+                  première valeur d’une Dora Milaje !
+                </p>
+                <p class="question">
+                  “ SI JE SUIS FIDELE C’EST A CE TRONE PEU IMPORTE QUI MONTE
+                  DESSUS ”
+                </p>
+                <p class="texte">Alors, as tu la réponse ?</p>
+                <div class="champ">
+                  <input type="text" name="" id="" placeholder="Réponse" />
+                  <button type="submit">Envoyer</button>
+                </div>
+              </div>
             </form>
           </div>
           <div class="texte-droite">
